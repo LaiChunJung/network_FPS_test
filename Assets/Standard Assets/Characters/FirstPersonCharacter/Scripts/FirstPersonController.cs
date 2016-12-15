@@ -90,19 +90,21 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             if (Input.GetMouseButtonDown(1))
             {
-                Fire();
-            }
+                CmdFire();
+            }
+
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
         }
 
-        void Fire()
+        void CmdFire()
         {
             // 產生實體
             GameObject bullet = Instantiate(
             bulletPrefab,
             bulletSpawn.position,
             bulletSpawn.rotation)as GameObject;
+            NetworkServer.Spawn(bullet);
             // 賦予力量給子彈
             bullet.GetComponent<Rigidbody>().velocity =transform.forward * 50;
             // 在兩秒後移除子彈

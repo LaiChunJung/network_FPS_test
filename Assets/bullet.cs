@@ -13,8 +13,7 @@ public class bullet : MonoBehaviour {
 	void Update () {
 		
 	}
-
-    void OnCollisionEnter(Collider target)
+    void OnCollisionEnter(Collision target)
     {
         GameObject hit = target.gameObject;
         Health health = hit.GetComponent<Health>();
@@ -22,6 +21,6 @@ public class bullet : MonoBehaviour {
         {
             health.TakeDamage(10);
         }
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 }

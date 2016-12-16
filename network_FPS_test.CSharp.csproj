@@ -104,7 +104,7 @@
     <Compile Include="Assets\Scripts\CannonballController.cs" />
     <Compile Include="Assets\Scripts\DamageScript.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\bullet.cs" />
+    <Compile Include="Assets\bullet_2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fonts\OpenSans\License!.txt" />

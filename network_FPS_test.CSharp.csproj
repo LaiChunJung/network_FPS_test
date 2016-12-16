@@ -87,6 +87,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\EnemySpawner.cs" />
     <Compile Include="Assets\Health.cs" />
     <Compile Include="Assets\Lobby\Scripts\DraggablePanel.cs" />
     <Compile Include="Assets\Lobby\Scripts\EventSystemChecker.cs" />
@@ -104,7 +105,7 @@
     <Compile Include="Assets\Scripts\CannonballController.cs" />
     <Compile Include="Assets\Scripts\DamageScript.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\bullet_2.cs" />
+    <Compile Include="Assets\bullet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fonts\OpenSans\License!.txt" />
